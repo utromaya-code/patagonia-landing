@@ -12,7 +12,7 @@
 |------|----------|
 | `index.html` | Главный лендинг — встроенные CSS и JS, без сборки |
 | `oferta.html` | Оферта + согласие на обработку персональных данных |
-| `img/` | Фото-плейсхолдеры (временные, с Flickr/CC; заменить на реальные) |
+| `img/` | Фотографии маршрута (Pexels + личные фото авторов) |
 
 Внешних зависимостей нет, кроме Google Fonts и счётчика Яндекс.Метрики.
 
@@ -36,16 +36,14 @@ https://utromaya-code.github.io/barinov-courses-landing/patagonia/
 2. **Даты** — финально зафиксировать формулировку (3–15 или 4–15 января).
 3. **Внутренние перелёты** — решить, берём единым блоком или каждый покупает сам;
    поправить текст в блоке «Стоимость» и в FAQ.
-4. **Фото** — заменить временные плейсхолдеры в `img/` на реальные, сохранив имена:
-   `hero-fitzroy.jpg`, `torres-del-paine.jpg`, `laguna-de-los-tres.jpg`,
-   `perito-moreno.jpg`, `grey-glacier.jpg`, `beagle-penguins.jpg`,
-   `ushuaia-fin-del-mundo.jpg`, `estancia.jpg`.
-5. **Карта маршрута** — заменить текстовый плейсхолдер-схему на картинку-карту.
-6. **Реквизиты** в `oferta.html` (отмечены `TODO`).
-7. **Яндекс.Метрика** — заменить `YM_COUNTER_ID` на реальный ID счётчика (в `index.html`,
+4. **Карта маршрута** — заменить текстовый плейсхолдер-схему на картинку-карту.
+5. **Реквизиты** в `oferta.html` (отмечены `TODO`).
+6. **Яндекс.Метрика** — заменить `YM_COUNTER_ID` на реальный ID счётчика (в `index.html`,
    3 вхождения: init, noscript, reachGoal). Цель `click_telegram` уже навешена на все Telegram-кнопки.
-8. **Организаторы** — добавить фото и 2–3 строки про опыт совместных поездок.
-9. **Виза в FAQ** — актуализировать визовый пункт перед запуском трафика.
+7. **Виза в FAQ** — актуализировать визовый пункт перед запуском трафика.
+8. **Фото отелей/эстансий** — карточки в блоке «Где живём» используют пейзажные
+   фото локаций; при желании заменить на реальные снимки La Quinta, El Ovejero
+   Patagónico, Terraza Coirones, Lennox Ushuaia с официальных страниц.
 
 ## Заметки
 
@@ -53,5 +51,21 @@ https://utromaya-code.github.io/barinov-courses-landing/patagonia/
 > сопровождение», а не турпродукт туроператора. В текстах избегаем слов
 > «тур», «турпутёвка», «туроператор». Финально — на усмотрение Андрея / юриста.
 
-Временные изображения в `img/` получены через loremflickr (Flickr, лицензии CC) —
-только для демонстрации вёрстки; для публикации заменить на собственные фото.
+### Источники фото
+
+- **Pexels** (лицензия Pexels, бесплатно для коммерции, атрибуция не требуется) —
+  пейзажи маршрута: `hero-fitzroy-sunrise.jpg`, `fitzroy-cerro-torre.jpg`,
+  `el-chalten-fitzroy.jpg`, `torres-del-paine.jpg`, `torres-base.jpg`,
+  `perito-moreno.jpg`, `perito-moreno-boat.jpg`, `grey-glacier.jpg`,
+  `beagle-penguins.jpg`, `ushuaia-town.jpg`, `ushuaia-beagle.jpg`,
+  `guanaco-steppe.jpg`, `king-crab-dinner.jpg`, `buenos-aires.jpg`.
+- **Официальные сайты отелей** — `hotel-weskar-lodge.jpg` (weskar.cl),
+  `hotel-terraza-coirones.jpg` (terrazacoirones.com),
+  `hotel-las-hayas.jpg` (lashayas.com.ar),
+  `estancia-la-quinta.jpg` (estancialaquinta.com.ar).
+- **Портреты организаторов** (`leonid-kutuzov.jpg`, `andrey-baranov.jpg`) — с leo-japan.ru.
+- **Финальный экран** (`laguna-torre.jpg`) — личное фото авторов.
+
+> В `img/` остаются неиспользуемые личные фото авторов (`hero-fitzroy.jpg`,
+> `laguna-de-los-tres.jpg`, `fitzroy-peaks.jpg`, `fitzroy-waterfall.jpg`) — их
+> можно вернуть в любой слот вместо стокового фото, если так предпочтительнее.
